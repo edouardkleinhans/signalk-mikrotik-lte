@@ -16,7 +16,8 @@
   "author": "Edouard Kleinhans",
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "CHANGELOG.md"
   ],
   "engines": {
     "node": ">=18"
