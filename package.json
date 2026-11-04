@@ -1,0 +1,25 @@
+{
+  "name": "signalk-mikrotik-lte",
+  "version": "0.1.0",
+  "description": "Signal K plugin: LTE signal (RSRP/RSRQ/SINR/CQI), operator, roaming and data counters from a MikroTik RouterOS v7 router via its REST API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "signalk-node-server-plugin",
+    "signalk-category-communication",
+    "mikrotik",
+    "routeros",
+    "lte"
+  ],
+  "author": "Edouard Kleinhans",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}
