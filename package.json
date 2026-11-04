@@ -1,6 +1,6 @@
 {
   "name": "signalk-mikrotik-lte",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Signal K plugin: LTE signal, operator, roaming, data plan tracking and SMS from a MikroTik RouterOS v7 router via its REST API, on the networking.lte.* paths used by the other LTE plugins.",
   "main": "index.js",
   "scripts": {
