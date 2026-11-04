@@ -17,7 +17,8 @@
   "license": "MIT",
   "files": [
     "index.js",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "docs/screenshots/"
   ],
   "engines": {
     "node": ">=18"
@@ -30,5 +31,11 @@
   "homepage": "https://github.com/edouardkleinhans/signalk-mikrotik-lte#readme",
   "bugs": {
     "url": "https://github.com/edouardkleinhans/signalk-mikrotik-lte/issues"
+  },
+  "signalk": {
+    "displayName": "MikroTik LTE",
+    "screenshots": [
+      "./docs/screenshots/data-browser.png"
+    ]
   }
 }

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 — 2026-11-04
+
+- Data browser screenshot and `signalk.displayName` in `package.json`; CHANGELOG shipped in the package.
+
 ## 0.2.1 — 2026-11-04
 
 - Published from GitHub Actions through npm Trusted Publishing, with provenance. No code change.

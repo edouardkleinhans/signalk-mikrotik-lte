@@ -3,8 +3,8 @@ const test = require('node:test')
 const assert = require('node:assert')
 const { mapMonitor, radioQuality, parseDuration, periodBounds, accountPlan, planValues, groupSms } = require('..')._test
 
-// Real RouterOS 7.23.8 / R11e-LTE response (identifiers trimmed).
-const MON = { 'access-technology': 'LTE', cqi: '15', 'current-cellid': '20604929', 'current-operator': 'Orange F', earfcn: '3000 (band 7, bandwidth 20Mhz)', 'phy-cellid': '334', roaming: 'true', rsrp: '-73', rsrq: '-7', sinr: '23', status: 'registered', 'session-uptime': '3d11h29m9s' }
+// Real RouterOS 7.23.8 / R11e-LTE response (identifiers replaced by fake values).
+const MON = { 'access-technology': 'LTE', cqi: '15', 'current-cellid': '12345678', 'current-operator': 'Orange F', earfcn: '3000 (band 7, bandwidth 20Mhz)', 'phy-cellid': '101', roaming: 'true', rsrp: '-73', rsrq: '-7', sinr: '23', status: 'registered', 'session-uptime': '3d11h29m9s' }
 
 test('registered monitor maps to networking.lte.* convention', () => {
   const v = mapMonitor(MON)
@@ -13,7 +13,7 @@ test('registered monitor maps to networking.lte.* convention', () => {
   assert.strictEqual(v['networking.lte.registerNetworkDisplay'], 'Orange F')
   assert.strictEqual(v['networking.lte.connectionType'], 'LTE')
   assert.strictEqual(v['networking.lte.curBand'], 7)
-  assert.strictEqual(v['networking.lte.pci'], 334)
+  assert.strictEqual(v['networking.lte.pci'], 101)
   assert.strictEqual(v['networking.lte.roaming'], true)
   assert.strictEqual(v['networking.lte.rssi'], null)
   assert.strictEqual(v['networking.lte.radioQuality'], 1) // RSRP -73 and SINR 23 both above "good"

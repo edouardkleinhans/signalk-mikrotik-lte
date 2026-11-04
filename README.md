@@ -15,6 +15,8 @@ LTE plugins, so `@meri-imperiumi/signalk-internet` and Status Tiles work unchang
 - SMS: `networking.lte.{lastMessage,lastMessageTime,sms.count}` and a `notifications.networking.lte.sms`
   alert per new message. The text ends up in Signal K data (and history, if recorded): turn `sms` off if that matters.
 
+![Data browser](docs/screenshots/data-browser.png)
+
 ## Router setup
 
 `www-ssl` must be enabled. Use a dedicated account: REST needs the `api` policy as well as `rest-api`.
